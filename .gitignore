@@ -1,0 +1,7 @@
+venv
+*.pyc
+output/*.jpg
+output/*.jpeg
+output/*.png
+models/*.pkl
+!models/export_densenet121_f3_20_054.pkl
