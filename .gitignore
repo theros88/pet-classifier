@@ -8,4 +8,4 @@ output/*.png
 output/*.webp
 output/*.gif
 models/*.pkl
-!models/export_densenet121_f3_20_054.pkl
+!models/densenet121_pet_class.pkl
