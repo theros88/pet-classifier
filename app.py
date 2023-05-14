@@ -16,7 +16,7 @@ external_stylesheets = [
 ]
 
 # Load the model
-learn_inf = load_learner(Path()/"models/export_densenet121_f3_20_054.pkl", cpu=True)
+learn_inf = load_learner(Path()/"models/densenet121_pet_class.pkl", cpu=True)
 # Seperate cat breeds from dog breeds
 breeds = learn_inf.dls.vocab
 cats = [breed.replace('_', ' ')
@@ -40,7 +40,7 @@ app.layout = html.Div(
 						  " I am pretty accurate about my recognition capabilities.",
 						  " I will even provide a percentage of my certainty.",
 						  html.Br(),
-						  "If you hover over the result panel, a list of all the recognizable breeds are shown in a tooltip.",
+						  html.Small("If you hover over the result panel, a list of all the recognizable breeds are shown in a tooltip."),
 						],
 	            className="header-description"
 	        ),

@@ -36,12 +36,12 @@ p {
 .header-title {
   font-family: 'Corben', cursive;
   font-size: 50px;
-  color: hsl(68, 12%, 45%);
+  color: #FFCB69;
   text-align: center;
   font-weight: 900;
   padding: 0 0 5px;
   margin auto;
-  -webkit-text-stroke: 1px hsl(68, 12%, 10%);
+  -webkit-text-stroke: 1px hsl(68, 20%, 55%);
   /*outline: 2px dashed red;*/
 
 }
@@ -53,7 +53,6 @@ p {
   font-size: 16px;
   margin: 0 auto;
   text-align: center;
-  text-align: justify;
   text-justify: inter-word;
   max-width: 60%;
   padding: 5px 0 20px;
