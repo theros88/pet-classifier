@@ -28,9 +28,6 @@ In order to make changes of the WebApp at run-time and see the changes, without 
 app.run_server(host='0.0.0.0',port=8050,debug=True)
 ```
 
-A sample screenshot of the WebApp follows:
-
-
 ## Containerization
 In order to create a container, docker was used with its corresponding `Dockerfile` for creation and final deployment. 
 
@@ -45,7 +42,6 @@ docker -t create -t <YOUR_ACR_NAME>.azurecr.io/pet-class-app:latest .
 In order to test the container locally, you could use:
 ```
 docker run <YOUR_ACR_NAME>.azurecr.io/pet-class-app
-
 ```
 This will start running the server in the docker container and can be accessed locally with a web browser at `http://172.17.0.2:8050`. 
 
@@ -71,6 +67,8 @@ A final step is necessary as by default Azure WebApps expose only `port:80` and 
 Now start the WebApp and it should be up and running!
 
 The WebApp can be seen running live in [Cat & Dog Breed Recognizer](https://petbreed.azurewebsites.net/).
+
+![Pet-Classifier-screenshot](https://github.com/theros88/pet-classifier/assets/103253087/e64e573d-0113-43e5-a2ea-e01696f10409)
 
 ## Further Developments
 - Monitoring the use of the WebApp
