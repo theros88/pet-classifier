@@ -117,5 +117,6 @@ if __name__ == '__main__':
 		except OSError as error: 
 			print(error)
 
-	app.run_server(host='0.0.0.0',port=8050,debug=False)
+	# The host parameter is necessary for running from inside a docker container 
+	app.run_server(host='0.0.0.0',port=8050,debug=False) 
 
